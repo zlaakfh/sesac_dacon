@@ -12,7 +12,9 @@ INPUT_PATH  = r"C:\Users\user\dacon_ws\Sample\02.라벨링데이터\segmentation
 OUTPUT_DIR  = r"C:\Users\user\dacon_ws\sesac_dacon\train_label"
 
 # 이미지 크기
-IMGW, IMGH  = 4030, 3040
+IMG_W = 4056
+IMG_H = 3040
+
 
 import json
 from pathlib import Path
@@ -49,9 +51,6 @@ ANNOTATION_LABEL = {
     "Animal": 27,
     "Human": 28
 }
-
-# 이미지 크기 고정(네 데이터 기준)
-IMG_W, IMG_H = 4030, 3040
 
 
 # -------------------------
