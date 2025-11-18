@@ -8,8 +8,10 @@
 
 ## 설치 및 환경 구성
 ``` shell
+# 가상 환경 생성 (선택 사항)
 python -m venv down_env
-source down_env/bin/activate
+source down_env/bin/activate  # Linux/macOS
+# .\down_env\Scripts\activate # Windows
 
 pip install -r requirements.txt
 
@@ -20,7 +22,8 @@ deactivate
 ## 실행 순서
 ``` shell
 python aihub_down.py
-
+python DT2_split_pre.py
+python DT2_coco_transform.py
 ```
 
 ## 결과물
